@@ -130,6 +130,29 @@
     border-top: 1px solid var(--border);
     padding-top: 14px;
   }
+  .ai-warning {
+    background: var(--panel);
+    border: 1px solid var(--warn);
+    border-left: 4px solid var(--warn);
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 10px 0 16px;
+    color: var(--ink);
+    font-size: 13px;
+  }
+  .ai-warning strong { color: var(--warn); }
+  .channels {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+  .channels a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .channels a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
@@ -250,9 +273,18 @@
 <p>For frame efficiency, casting Dangri early is also nice. Roughly that vibe — feel it out.</p>
 
 <footer>
-  Translated &amp; styled from a Korean Whisper transcription
-  (<code>yt_yDYUF_8-6LI.json</code>) — light editorial pass for clarity. Original speaker's
-  uncertainty preserved (<em>"probably," "I think,"</em> etc.).
+  <div class="ai-warning">
+    <strong>⚠ AI-generated content.</strong> Korean audio was transcribed by Whisper
+    (<code>large-v3</code>) and translated/edited by an LLM. Translation may misread game
+    jargon, skill names, or numbers — verify anything load-bearing against the
+    <a href="https://www.youtube.com/watch?v=yDYUF_8-6LI" target="_blank">original video</a>
+    before relying on it.
+  </div>
+  <div>Find me on:</div>
+  <div class="channels">
+    <a href="https://www.twitch.tv/thejunglewalrus" target="_blank">▶ twitch.tv/thejunglewalrus</a>
+    <a href="https://www.youtube.com/@thejunglewalrus" target="_blank">▶ youtube.com/@thejunglewalrus</a>
+  </div>
 </footer>
 
 </div>
