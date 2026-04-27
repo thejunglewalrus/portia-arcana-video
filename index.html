@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MZ-style Emperor (Arcanist) — Korean meta breakdown</title>
+<style>
+  :root {
+    --bg: #0e1116;
+    --panel: #161b22;
+    --border: #2d333b;
+    --ink: #e6edf3;
+    --ink-dim: #9da7b3;
+    --accent: #ffb86b;
+    --accent2: #7ee787;
+    --warn: #ff7b72;
+    --code-bg: #1f242c;
+  }
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.55 -apple-system, "Segoe UI", system-ui, "Helvetica Neue", Arial, sans-serif;
+  }
+  .wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 32px 36px 48px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 18px;
+    margin-bottom: 28px;
+  }
+  h1 {
+    margin: 0 0 6px;
+    font-size: 28px;
+    line-height: 1.25;
+  }
+  .sub {
+    color: var(--ink-dim);
+    font-size: 14px;
+  }
+  .sub a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .sub a:hover { text-decoration: underline; }
+  h2 {
+    margin: 36px 0 12px;
+    font-size: 21px;
+    color: var(--accent);
+    border-left: 3px solid var(--accent);
+    padding-left: 12px;
+  }
+  h3 {
+    margin: 24px 0 8px;
+    font-size: 17px;
+    color: var(--accent2);
+  }
+  p { margin: 10px 0; }
+  ul { margin: 8px 0 14px; padding-left: 22px; }
+  li { margin: 6px 0; }
+  strong { color: var(--ink); }
+  em { color: var(--ink-dim); }
+  code, .term {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font: 14px/1.4 "Cascadia Code", "Fira Code", Consolas, monospace;
+    color: var(--accent2);
+  }
+  blockquote {
+    border-left: 3px solid var(--ink-dim);
+    margin: 14px 0;
+    padding: 4px 14px;
+    color: var(--ink-dim);
+    font-style: italic;
+  }
+  .callout {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--warn);
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin: 14px 0;
+  }
+  .callout.tip {
+    border-left-color: var(--accent2);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  th { color: var(--accent); font-weight: 600; }
+  ol.priority {
+    counter-reset: pri;
+    list-style: none;
+    padding-left: 0;
+  }
+  ol.priority li {
+    counter-increment: pri;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin: 6px 0;
+    padding: 8px 14px 8px 44px;
+    position: relative;
+  }
+  ol.priority li::before {
+    content: counter(pri);
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+    font-weight: 700;
+  }
+  footer {
+    margin-top: 40px;
+    color: var(--ink-dim);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>MZ-style Emperor (Arcanist) — Korean Meta Breakdown</h1>
+  <div class="sub">
+    Translated transcript ·
+    <a href="https://www.youtube.com/watch?v=yDYUF_8-6LI" target="_blank">source video (8:18)</a>
+  </div>
+</header>
+
+<h2>Why this build is hot right now</h2>
+<p>
+  About <strong>4 months ago</strong>, a patch dramatically buffed the
+  <span class="term">Stack Hold</span> core. To understand why it matters, you have to
+  understand how <strong>Norma Lineance</strong> (the noble-lineage class identity used by
+  Emperor) works: triggering its <em>Fate</em> reduces the <strong>current cooldown</strong>
+  of skills like <span class="term">Riku Jansae Blade</span> by 10% — a current-CD reduction,
+  not a flat one.
+</p>
+<p>
+  The old core, <span class="term">Emperor's Heart</span>, triggered Fate when you used a
+  <strong>skill</strong>. <span class="term">Stack Hold</span> instead triggers Fate when you
+  play a <strong>card</strong>.
+</p>
+<div class="callout">
+  <strong>The catch:</strong> if you hold cards back to time them with skills, you inevitably
+  overflow Aden — you can only hold <strong>2 cards</strong>. Every card you can't hold = a
+  Fate trigger you didn't get = cooldown reduction lost.
+</div>
+
+<h2>The NA meta solution: extreme card draw</h2>
+<p>NA top players are now running max-card-draw setups:</p>
+<ul>
+  <li><strong>Dangri:</strong> drop Enhanced Strike, run <span class="term">Quick Draw 60%</span></li>
+  <li><strong>Evoke:</strong> drop Quick Strike, run <span class="term">Quick Draw + Comic Addiction</span> tripod combo</li>
+</ul>
+<p>
+  The goal is to pump card supply so high that you never overflow. Quick-draw tripoded skills
+  generate a card and Aden simultaneously, so casting Evoke or Dethrone refills Aden with a tiny
+  delay you can't track by eye. And because Norma Lineance reduces <strong>current</strong>
+  cooldown, every 0.1s you wait to play a card is benefit lost — so you play them
+  <strong>immediately</strong>.
+</p>
+
+<h2>The technique: mouse-button spam</h2>
+<p>
+  You can't hit Z/X with your left hand while it's on QWER/ASDF — physically impossible, even
+  pros can't do it. Macros would solve it but…
+</p>
+<div class="callout">
+  Macros are cheating. We're <strong>good users</strong>, we play by hand.
+</div>
+<p>The trick:</p>
+<ul>
+  <li>In keybinds, set <strong>Z's alt key to a mouse extra-button</strong>.</li>
+  <li>Mash that button constantly with your right hand while skilling with the left.</li>
+</ul>
+<p>
+  On a target dummy you can see it work — the first card slot is never visible because cards are
+  burned the instant they're drawn. Just mash mouse-button → X → mouse-button → X. It's
+  <em>mystery cards</em>: you don't see them, your viewers don't see them, nobody knows what's
+  getting played.
+</p>
+<blockquote>"This too shall pass."</blockquote>
+
+<h2>Runes (work in progress, optimize to taste)</h2>
+<p>Cast times: <strong>1.81s · 0.8s · 0.55s</strong></p>
+<table>
+  <thead><tr><th>Skill</th><th>Rune</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Shuffle <em>(longest cast)</em></td><td>Quintessence</td><td>biggest cast-time savings</td></tr>
+    <tr><td>Unbu (<span class="term">운부</span>)</td><td>Quintessence</td><td>40s base CD on Floor vs 8s on Unbu — Unbu wins by frequency, even after Self-Sacrifice cuts Floor to ~32s</td></tr>
+    <tr><td>Floor (<span class="term">플라워</span>)</td><td>Heroic Gust</td><td></td></tr>
+    <tr><td>Sole Judgment</td><td>—</td><td>I think it's fine; NA doesn't run it. Up to you, no real impact.</td></tr>
+    <tr><td>Dangri (NA top variant)</td><td>Heroic Bounty</td><td>tried it — feels okay, fills surprisingly often</td></tr>
+  </tbody>
+</table>
+<h3>Master vs Crush <span class="term">(분쇄/달인)</span></h3>
+<p>
+  Master works too — doesn't overhit even at endgame spec. Crush is usually preferred to avoid
+  losses on Eviction (<span class="term">도태</span>) procs, but Master's card-variance is lower
+  and might honestly be fine if you're spamming Eviction mindlessly anyway. Up to you, basically
+  the same.
+</p>
+
+<h2>Personal review (limited reps)</h2>
+<p>
+  I haven't done this all year, but I ran this week's raids with it.
+</p>
+<ul>
+  <li><strong>Mouse-button mashing — still not used to it.</strong> Currently feels clunky, but once it clicks I'll probably do it without thinking.</li>
+  <li><strong>DPS floor is clearly higher</strong> — because you're not looking at cards, you can't make bad choices.</li>
+  <li><strong>Ceiling is probably not higher.</strong> Best parses against my old ones are basically the same.</li>
+  <li>Better for average players. <strong>For really good players, manual card play might still be better.</strong> With more keybind optimization it might pull ahead, but mouse-extra-button is probably the best implementation right now.</li>
+</ul>
+<div class="callout tip">
+  My thumb's going to need a break. I wish I could rest it without being a "bad user" running macros.
+</div>
+
+<h2>Rotation (rough — forgot to write this part down)</h2>
+<p><strong>Opener:</strong> Evoke → Stream → Dangri → Return</p>
+<p>
+  Order can change. Originally Dangri first, but Return's wind-up is long enough now that
+  Return-first is probably fine too. Watch good Arcanist players for refined cycles.
+</p>
+<p><strong>Loop:</strong> pop Evoke → Floor + Shuffle → Unbu → Surge (<span class="term">쇄도</span>) if up → and Dethrone (<span class="term">더썸</span>), forgot about that one.</p>
+
+<h2>Skill priority (my take)</h2>
+<ol class="priority">
+  <li>Edge</li>
+  <li>Evoke</li>
+  <li>Return <em>— don't overuse</em></li>
+  <li>Floor / Shuffle (Floor probably first?)</li>
+</ol>
+<p>For frame efficiency, casting Dangri early is also nice. Roughly that vibe — feel it out.</p>
+
+<footer>
+  Translated &amp; styled from a Korean Whisper transcription
+  (<code>yt_yDYUF_8-6LI.json</code>) — light editorial pass for clarity. Original speaker's
+  uncertainty preserved (<em>"probably," "I think,"</em> etc.).
+</footer>
+
+</div>
+</body>
+</html>
